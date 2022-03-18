@@ -7,11 +7,11 @@ async function main() {
     data: {
       description: "Aprendendo firebase do zero",
       name: "Aprendendo Firebase",
-      courses: {
+      CoursesModules: {
         create: {
-          course: {
+          courses: {
             connect: {
-              id: "e27d03d2-f5ca-4f0c-908e-1d1bdda7a83e",
+              id: "0075121c-f1f5-4f1b-b1bb-239b4c0660cd",
             },
           },
         },
