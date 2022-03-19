@@ -5,13 +5,14 @@ const prisma = new PrismaClient();
 async function main() {
   const result = await prisma.courses.findMany({
     where: {
-      name: {
-        startsWith: "Curso",
-        mode: "insensitive"
-      },
+      OR: [
+        {
+          name: {
+            contains: "react",
+            mode: "insensitive",
+          },
+        },
+      ],
     },
   });
-  console.log(result);
 }
-
-main();
